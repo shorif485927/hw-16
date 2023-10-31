@@ -1,0 +1,217 @@
+ 
+
+ /* COMMON code starts */
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+   body{
+      background-color: var(--second-color);
+   }
+ ul,ol{
+    list-style-type: none;
+ }
+ a{
+    text-decoration: none;
+ }
+ .container{
+    width: 80%;
+    margin: auto;
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+:root{
+       --first-color:navy;
+       --second-color:white;
+        --third-color:rgba(0, 0, 0, 0.795);
+  
+
+}
+
+ /* ends  */
+
+ /* nav starts  */
+ nav{
+    background-color: var(--first-color);
+    color:  var(--second-color);
+    text-transform: capitalize;
+ padding: 30px 25px ;
+
+
+ }
+ nav ul li a{
+    color: white;
+ }
+
+    nav ul li{
+        display: inline-block;
+         margin: 10px;
+     
+    }
+    nav ul li:hover a{
+        color: red;
+   
+    }
+
+    nav .row{
+        justify-content: space-between;
+        align-items: center;
+    }
+.logo p{
+        color: white;
+        font-style: italic;
+    }
+    .logo span{
+        color: red;
+    }
+
+    nav button{
+  background-color: transparent;
+  border: 1px solid  var(--second-color);
+  color: var(--second-color);   
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+ }
+    nav button .btn{
+      display: inline-block;
+    }
+     .light__btn{
+     background-color: var(--third-color);
+     color: var(--second-color);
+  font-size: 17px;
+     padding: 5px 10px;
+ 
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+ }
+ .dark__btn{
+   background-color: yellow;
+   color: var(--third-color);
+font-size: 17px;
+padding: 5px 10px;
+ }
+
+    /* !about section  */
+     #about{
+
+     
+     }
+       #about .container{
+ 
+           padding: 50px 30px;
+       }
+     .about__details{
+      text-align: center;
+      padding: 0 60px;
+      color: var(--third-color);
+     }
+     .about__img img{
+      width: 400px;
+     }
+
+     .about__details h3{
+      font-size: 25px;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      color: var(--third-color);
+     }
+     .about__details p{
+      font-size: 15px;
+       margin: 20px 0;
+       color: var(--third-color);
+     }
+     .about__details button{
+      padding:10px 15px;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-right: 15px;
+      background-color: transparent;
+      border: .8px solid black;
+      color: var(--third-color);
+      outline: none;
+      border-radius: 5px;
+      transition: .5s;
+      cursor: pointer;
+     }
+     .about__details button:hover{
+       background-color: blue;
+       border: none;
+       color: white;
+       transform: tara;
+     }
+
+       /* todo skills   */
+
+          #skills .container{
+      
+          }
+          #skills .card{
+               width:calc( 33.33% - 40px);
+               text-align: center;
+               margin: 20px ;
+               border: none;
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 25px 30px;
+            }
+
+          .card h2{
+            font-size: 25px;
+            text-transform: capitalize;
+            color: var(--third-color);
+          }
+          .card p{
+            font-size: 13px;
+           margin: 15px 0;
+            text-align: justify;
+            border-bottom: 1px solid var(--third-color);
+            padding-bottom: 5px;
+            color: var(--third-color);
+          }
+
+
+          /*  dark mode  */
+
+
+            .dark__mode{
+               --second-color:rgba(0, 0, 0, 0.795);
+               --third-color:white;
+               transition: .5s;
+            }
+
+            /*  custom cursor */
+
+              .custom__cursor{
+                position: absolute;
+                top: 0 ;
+                bottom: 0;
+                width: 70px;
+                height: 70px;
+         
+                border: 2px solid orangered;
+                border-radius: 50%;
+                transform: translate(-50%,-50%);
+                  pointer-events: none;
+              }
+
+              .small-cursor{
+               position: absolute;
+               top: 0 ;
+               bottom: 0;
+               width: 25px;
+               height: 25px;
+        
+              background-color: skyblue;
+               border-radius: 50%;
+               transform: translate(-50%,-50%);
+              transition: .3s; 
+              pointer-events: none;
+            }
